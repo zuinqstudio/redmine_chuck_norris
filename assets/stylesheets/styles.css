@@ -1,0 +1,25 @@
+
+body {
+	
+}
+
+div#factWrapper {
+	padding-right: 10px;
+}
+
+	div#factWrapper a.nextFact {
+		display: block;
+		margin-top: 10px;
+		text-align: right;
+		outline: none;
+	}
+
+div.chuck_ok {
+	background: url('../images/chuck_ok.gif') 100% 100% no-repeat;
+	min-height: 600px;
+}
+
+div.chuck_nok {
+	background: url('../images/chuck_nok.gif') 100% 100% no-repeat;
+	min-height: 600px;
+}
