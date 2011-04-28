@@ -13,7 +13,7 @@
 
 = Plugin description
 
-This plugin modifies the _Project_ overview tab showing a random <b>Chuck Norris<b> (yeah it is actually
+This plugin modifies the _Project_ overview tab showing a random <b>Chuck Norris</b> (yeah it is actually
 in bold so that he realizes that we really respect him and doesn't kick our butts) fact.
 
 Chuck will also approve the project if more than 50% issues are closed.
