@@ -14,7 +14,7 @@
 class CreateChuckNorrisFacts < ActiveRecord::Migration
   def self.up
     create_table :chuck_norris_facts do |t|
-      t.column :description, :longtext
+      t.column :description, :text
     end
     
     ChuckNorrisFact.create:description => "Guns don't kill people, Chuck Norris does."
