@@ -1,14 +1,4 @@
-# Encoding: UTF-8
-# Written by: Signo-Net
-# Email: clientes {at} signo-net.com
-# Web: http://www.signo-net.com
-# This work is licensed under a Creative Commons Attribution 3.0 License.
-# http://creativecommons.org/licenses/by/3.0/
-# This means you may use it for any purpose, and make any changes you like.
-# All we ask is that you include a link back to our page in your credits.
-# Looking forward your comments and suggestions! Feel free to write to <tt>clientes {at} signo-net.com</tt>
-
-= Plugin description
+= Chuck Norris Facts
 
 This plugin modifies the _Project_ overview tab showing a random <b>Chuck Norris</b> (yeah it is actually
 in bold so that he realizes that we really respect him and doesn't kick our butts) fact.
@@ -26,3 +16,7 @@ Chuck will also approve the project if more than 50% issues are closed.
 - First off, be sure you want to get rid of the (awesome) Chuck Norris' Facts plugin on your projects overview.
 - Undo the database migration by typing <tt>rake db:migrate:plugin NAME=redmine_chuck_norris VERSION=0</tt>
 - Remove <tt>redmine_chuck_norris</tt> from your <tt>redmine/vendor/plugins</tt> folder.
+
+=== Contact
+
+We are looking forward your comments and suggestions! Feel free to write to <tt>clientes {at} signo-net.com</tt>
