@@ -23,3 +23,8 @@ div.chuck_nok {
 	background: url('../images/chuck_nok.gif') 100% 100% no-repeat;
 	min-height: 600px;
 }
+
+div.chuck_ok div.members, 
+div.chuck_nok div.members {
+	margin-bottom: 250px;
+}
