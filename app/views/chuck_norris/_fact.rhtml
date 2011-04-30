@@ -19,7 +19,7 @@
 <h3>Chuck Norris Fact</h3>
 <div id="factWrapper">
 	<em id="fact"><%= @fact.description %></em>
-	<%= link_to_remote "Next fact", 
+	<%= link_to_remote l(:next_fact), 
 	                   { :url => { :controller => 'chuck_norris', :action => 'next_fact', :project_id => @project },
 	                     :method => :post,
 	                     :update => 'chuckNorrisFact'					 

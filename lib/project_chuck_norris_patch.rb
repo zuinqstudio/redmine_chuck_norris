@@ -39,8 +39,9 @@ module ProjectControllerPatch
     end
   
     def load_random_fact
-	  numberOfFacts = ChuckNorrisFact.count(:all)
-	  @fact = ChuckNorrisFact.find(1 + rand(numberOfFacts))
+  	  facts = ChuckNorrisFact.find(:all, :conditions => {:lang => current_language.to_s.downcase})
+      numberOfFacts = facts.length  
+      @fact = facts.at(rand(numberOfFacts))
     end
   end
 end
