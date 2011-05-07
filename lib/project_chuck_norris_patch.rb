@@ -11,14 +11,13 @@
 
 # Looking forward your comments and suggestions! clientes@signo-net.com
 
-require_dependency "projects_controller" 
+require_dependency "projects_controller"
 
 module ProjectControllerPatch
   def self.included(base) # :nodoc:
     base.send :include, InstanceMethods
     base.send :extend,  ClassMethods
     base.class_eval do
-		logger.debug("*** Entro en baseeeee")
 	  alias_method_chain :show, :chuck
 	end
    end
@@ -27,28 +26,16 @@ module ProjectControllerPatch
   end
   
   module InstanceMethods
+    include ChuckNorrisHelper
+    
     def show_with_chuck
-	  logger.debug("*** Generamos un fact aleatorio")
-	  load_random_fact
-	  show_without_chuck
+  	  show_without_chuck
     end
 
     def next_fact 
-  	  load_random_fact
-	  render :partial => 'fact'
+	   render :partial => 'fact'
     end
-  
-    def load_random_fact
-  	  lang = current_language.to_s.downcase;
-      if lang == "es"
-        facts = ChuckNorrisFact.find(:all, :conditions => {:lang => lang})
-      else
-        facts = ChuckNorrisFact.find(:all, :conditions => {:lang => "en"})
-      end
-      
-      numberOfFacts = facts.length  
-      @fact = facts.at(rand(numberOfFacts))
-    end
+
   end
 end
 

@@ -18,7 +18,7 @@
 
 <h3>Chuck Norris Fact</h3>
 <div id="factWrapper">
-	<em id="fact"><%= ChuckNorrisHelper::load_random_fact(current_language).description %></em>
+	<em id="fact"><%= @fact.description %></em>
 	<%= link_to_remote l(:next_fact), 
 	                   { :url => { :controller => 'chuck_norris', :action => 'next_fact', :project_id => @project },
 	                     :method => :post,

@@ -14,28 +14,15 @@
 class ChuckNorrisController < ApplicationController
   
   unloadable
+  include ChuckNorrisHelper
  
   before_filter :find_project, :authorize, :only => :index
   
   def index
-    load_random_fact
   end
   
   def next_fact 
-    load_random_fact
     render :partial => 'fact'
-  end
-  
-  def load_random_fact
-    lang = current_language.to_s.downcase;
-    if lang == "es"
-      facts = ChuckNorrisFact.find(:all, :conditions => {:lang => lang})
-    else
-      facts = ChuckNorrisFact.find(:all, :conditions => {:lang => "en"})
-    end
-    
-    numberOfFacts = facts.length  
-    @fact = facts.at(rand(numberOfFacts))
   end
  
  private
