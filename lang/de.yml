@@ -1,7 +1,6 @@
 # Encoding: UTF-8
-# Written by: Signo-Net
-# Email: clientes@signo-net.com
-# Web: http://www.signo-net.com
+# Written by: Alexander Meindl
+# Email: alex@squatlabs.com
 
 # This work is licensed under a Creative Commons Attribution 3.0 License.
 # [ http://creativecommons.org/licenses/by/3.0/ ]
@@ -11,7 +10,6 @@
 
 # Looking forward your comments and suggestions! clientes@signo-net.com
 
-en:
-  my_label: My label
-  next_fact: Next fact
-  chuck_norris_fact: Chuck Norris Fact
+my_label: "Meine Bezeichnung"
+next_fact: "Nächster Fakt"
+chuck_norris_fact: "Chuck Norris Fakt"

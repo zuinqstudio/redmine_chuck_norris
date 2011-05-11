@@ -1,8 +1,8 @@
 <%
 # Encoding: UTF-8
 # Written by: Signo-Net
-# Email: clientes@signo-net.com 
-# Web: http://www.signo-net.com 
+# Email: clientes@signo-net.com
+# Web: http://www.signo-net.com
 
 # This work is licensed under a Creative Commons Attribution 3.0 License.
 # [ http://creativecommons.org/licenses/by/3.0/ ]
@@ -16,12 +16,12 @@
     <%= stylesheet_link_tag 'styles', :plugin => 'redmine_chuck_norris' %>
 <% end %>
 
-<h3>Chuck Norris Fact</h3>
+<h3><%= l(:chuck_norris_fact) %></h3>
 <div id="factWrapper">
 	<em id="fact"><%= ChuckNorrisHelper::load_random_fact(current_language).description %></em>
-	<%= link_to_remote l(:next_fact), 
+	<%= link_to_remote l(:next_fact),
 	                   { :url => { :controller => 'chuck_norris', :action => 'next_fact', :project_id => @project },
 	                     :method => :post,
-	                     :update => 'chuckNorrisFact'					 
+	                     :update => 'chuckNorrisFact'
 	                   }, :class => 'nextFact' %>
 </div>

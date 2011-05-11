@@ -1,7 +1,7 @@
 # Encoding: UTF-8
 # Written by: Signo-Net
-# Email: clientes@signo-net.com 
-# Web: http://www.signo-net.com 
+# Email: clientes@signo-net.com
+# Web: http://www.signo-net.com
 
 # This work is licensed under a Creative Commons Attribution 3.0 License.
 # [ http://creativecommons.org/licenses/by/3.0/ ]
@@ -13,3 +13,4 @@
 es:
   my_label: Mi etiqueta
   next_fact: Siguiente cita
+  chuck_norris_fact: Chuck Norris Fact
