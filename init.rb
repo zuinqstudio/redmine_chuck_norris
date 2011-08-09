@@ -18,7 +18,7 @@ Redmine::Plugin.register :redmine_chuck_norris do
   name 'Redmine Chuck Norris plugin'
   author 'Signo-Net'
   description 'This plugin modifies the Project overview tab showing a random Chuck Norris fact. Chuck will also approve the project if more than 50% issues are closed.'
-  version '0.0.3'
+  version '0.0.4'
   url 'http://www.signo-net.com'
   author_url 'http://www.signo-net.com'
   requires_redmine :version_or_higher => '1.0.0'
