@@ -13,3 +13,4 @@
 
 my_label: "My label"
 next_fact: "Next fact"
+fact_not_found: "No Norris Fact found"

@@ -16,15 +16,8 @@
     <%= stylesheet_link_tag 'styles', :plugin => 'redmine_chuck_norris' %>
 <% end %>
 
-<h3>Chuck Norris Fact</h3>
-<div id="factWrapper">
-	<em id="fact">
-		<% fact = ChuckNorrisHelper::load_random_fact(current_language) %>
-		<%= (fact != nil)?(fact.description):l(:fact_not_found) %>
-	</em>
-	<%= link_to_remote l(:next_fact), 
-	                   { :url => { :controller => 'chuck_norris', :action => 'next_fact', :project_id => @project },
-	                     :method => :post,
-	                     :update => 'chuckNorrisFact'					 
-	                   }, :class => 'nextFact' %>
-</div>
+<% content_for :sidebar do %>
+	<div id="chuckNorrisFact">
+	    <%= render :partial => 'fact' %>
+	</div>
+<% end %>

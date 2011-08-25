@@ -13,3 +13,4 @@
 
 my_label: "Mi etiqueta"
 next_fact: "Siguiente cita"
+fact_not_found: "No se ha encontrado ningún Chuck Norris Fact"
