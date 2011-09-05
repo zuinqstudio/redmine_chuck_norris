@@ -14,8 +14,9 @@
 class TranslateChuckNorrisFacts < ActiveRecord::Migration
   def self.up
     
-    add_column :chuck_norris_facts, :lang, :string, :default => "en"    
+    add_column :chuck_norris_facts, :lang, :string, :default => "en"
     ChuckNorrisFact.reset_column_information
+    ChuckNorrisFact.update_all(:lang => "en")
     
     factsEs = IO.readlines(File.dirname(__FILE__) + "/facts_es.txt");
     factsEs.collect {|fact| 
